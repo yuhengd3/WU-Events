@@ -13,6 +13,7 @@
 		5831B340273F2B32009CC821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5831B33E273F2B32009CC821 /* Main.storyboard */; };
 		5831B342273F2B34009CC821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5831B341273F2B34009CC821 /* Assets.xcassets */; };
 		5831B345273F2B34009CC821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5831B343273F2B34009CC821 /* LaunchScreen.storyboard */; };
+		9BB3408085BBE5EA77CD22A2 /* Pods_WU_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94822AAEF65C477FF8BEB5D /* Pods_WU_Events.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		5831B341273F2B34009CC821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5831B344273F2B34009CC821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5831B346273F2B34009CC821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		596A8964243F67F3968E1DBD /* Pods-WU Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WU Events.release.xcconfig"; path = "Target Support Files/Pods-WU Events/Pods-WU Events.release.xcconfig"; sourceTree = "<group>"; };
+		649CC65C36A8122AB0C32403 /* Pods-WU Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WU Events.debug.xcconfig"; path = "Target Support Files/Pods-WU Events/Pods-WU Events.debug.xcconfig"; sourceTree = "<group>"; };
+		F94822AAEF65C477FF8BEB5D /* Pods_WU_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WU_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB3408085BBE5EA77CD22A2 /* Pods_WU_Events.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				5831B337273F2B32009CC821 /* WU Events */,
 				5831B336273F2B32009CC821 /* Products */,
+				C8CF7268173EDD072E664043 /* Pods */,
+				918A1D4E51B2AA714808A000 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "WU Events";
 			sourceTree = "<group>";
 		};
+		918A1D4E51B2AA714808A000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F94822AAEF65C477FF8BEB5D /* Pods_WU_Events.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8CF7268173EDD072E664043 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				649CC65C36A8122AB0C32403 /* Pods-WU Events.debug.xcconfig */,
+				596A8964243F67F3968E1DBD /* Pods-WU Events.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5831B349273F2B34009CC821 /* Build configuration list for PBXNativeTarget "WU Events" */;
 			buildPhases = (
+				854CD64BD97AFD2A8520C523 /* [CP] Check Pods Manifest.lock */,
 				5831B331273F2B32009CC821 /* Sources */,
 				5831B332273F2B32009CC821 /* Frameworks */,
 				5831B333273F2B32009CC821 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		854CD64BD97AFD2A8520C523 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WU Events-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5831B331273F2B32009CC821 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		5831B34A273F2B34009CC821 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649CC65C36A8122AB0C32403 /* Pods-WU Events.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +353,7 @@
 		};
 		5831B34B273F2B34009CC821 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596A8964243F67F3968E1DBD /* Pods-WU Events.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
