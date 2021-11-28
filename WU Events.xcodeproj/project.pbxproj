@@ -13,6 +13,10 @@
 		5831B340273F2B32009CC821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5831B33E273F2B32009CC821 /* Main.storyboard */; };
 		5831B342273F2B34009CC821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5831B341273F2B34009CC821 /* Assets.xcassets */; };
 		5831B345273F2B34009CC821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5831B343273F2B34009CC821 /* LaunchScreen.storyboard */; };
+		7F9074BA2754445500A42EB0 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9074B92754445500A42EB0 /* DiscoverViewController.swift */; };
+		7F9074BC275446E800A42EB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9074BB275446E800A42EB0 /* User.swift */; };
+		7F9074BE275447B600A42EB0 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9074BD275447B600A42EB0 /* Organization.swift */; };
+		7F9074C027544AFB00A42EB0 /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9074BF27544AFB00A42EB0 /* DiscoverCell.swift */; };
 		9BB3408085BBE5EA77CD22A2 /* Pods_WU_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94822AAEF65C477FF8BEB5D /* Pods_WU_Events.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		5831B346273F2B34009CC821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		596A8964243F67F3968E1DBD /* Pods-WU Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WU Events.release.xcconfig"; path = "Target Support Files/Pods-WU Events/Pods-WU Events.release.xcconfig"; sourceTree = "<group>"; };
 		649CC65C36A8122AB0C32403 /* Pods-WU Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WU Events.debug.xcconfig"; path = "Target Support Files/Pods-WU Events/Pods-WU Events.debug.xcconfig"; sourceTree = "<group>"; };
+		7F9074B92754445500A42EB0 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		7F9074BB275446E800A42EB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F9074BD275447B600A42EB0 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		7F9074BF27544AFB00A42EB0 /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
 		F94822AAEF65C477FF8BEB5D /* Pods_WU_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WU_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +78,10 @@
 				5831B341273F2B34009CC821 /* Assets.xcassets */,
 				5831B343273F2B34009CC821 /* LaunchScreen.storyboard */,
 				5831B346273F2B34009CC821 /* Info.plist */,
+				7F9074B92754445500A42EB0 /* DiscoverViewController.swift */,
+				7F9074BB275446E800A42EB0 /* User.swift */,
+				7F9074BD275447B600A42EB0 /* Organization.swift */,
+				7F9074BF27544AFB00A42EB0 /* DiscoverCell.swift */,
 			);
 			path = "WU Events";
 			sourceTree = "<group>";
@@ -88,7 +100,6 @@
 				649CC65C36A8122AB0C32403 /* Pods-WU Events.debug.xcconfig */,
 				596A8964243F67F3968E1DBD /* Pods-WU Events.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -189,7 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5831B33D273F2B32009CC821 /* ViewController.swift in Sources */,
+				7F9074BA2754445500A42EB0 /* DiscoverViewController.swift in Sources */,
 				5831B339273F2B32009CC821 /* AppDelegate.swift in Sources */,
+				7F9074BC275446E800A42EB0 /* User.swift in Sources */,
+				7F9074C027544AFB00A42EB0 /* DiscoverCell.swift in Sources */,
+				7F9074BE275447B600A42EB0 /* Organization.swift in Sources */,
 				5831B33B273F2B32009CC821 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
